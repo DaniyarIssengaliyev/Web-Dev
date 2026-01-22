@@ -4,14 +4,22 @@ body {
 }
 
 h1 {
-    color: rgb(34, 225, 53);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larges;
+    color: rgba(4, 169, 246, 0.654);
+    text-decoration: solid;
+    text-transform: capitalize;
 }
 h3 {
     color: rgb(50,100,20);
 }
 img{
     width: 250px;
-    align-self: center;
+    align-self: center; 
+    border: 5px dashed salmon;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #ccc;
 }
 figure{
     margin: auto;
@@ -20,4 +28,17 @@ figure{
 }
 figcaption{
     text-align: center;
+}
+button{
+    cursor: pointer;
+    color: rgb(146, 224, 20)
+}
+pic{
+    text-align: center;
+}
+item{
+    color: red;
+}
+desc{
+    font-style: italic;
 }
