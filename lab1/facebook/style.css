@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #f0f2f5;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 60px;
+}
+.left{
+    max-width: 500px;
+}
+.logo{
+    width: 350px;
+    margin-bottom: 20px;
+    display:block;
+}
+.logo{ vertical-align: middle; }
+
+.subtitle{
+    font-size: 26px;
+    color: #1c1e21;
+}
+.login-card{
+    background: white;
+    width: 360px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-card input{
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    outline:none;
+}
+.login-btn{
+    background: #0866FF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    font-family:Helvetica, Arial,  sans-serif;
+}
+.login-btn:hover{
+    background: #1f7df8;
+}
+.login-btn:active {
+  transform: scale(0.99);
+}
+.forgot{
+    text-align: center;
+    color: #1f7df8;
+    font-size: 14px;
+    text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.login-card hr {
+  border: none;
+  height: 1px;
+  background: #dadde1;
+  margin: 6px 0;
+}
+.newacc-btn{
+    background: rgb(66,183,42);
+    border: 0px;
+    color: white;
+    font-size: 17px;
+    padding: 14px;
+    align-self: center;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.newacc-btn:hover{
+    background:rgb(60, 168, 38);
+}
+.page-text{
+    margin-top: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+    max-width: 360px;
+}
+.footer{
+    background: white;
+    padding: 22px 0;
+    font-size: 12px;
+    color: #818080;
+}
+.footer-languages,.footer-links,.footer-meta{
+    width:min(980px,92%);
+}
+.footer a{
+    color: #818080;
+    text-decoration: none;
+    margin-right: 10px;
+    line-height: 8px;
+    white-space: nowrap;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer-languages,
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer hr{
+    border: none;
+    height: 1px;
+    background: #dadde1;
+    margin: 8px auto;
+}
+.footer-meta{
+    margin-top: 10px;
+}
