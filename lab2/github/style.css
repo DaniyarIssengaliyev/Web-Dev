@@ -121,6 +121,10 @@
     color: #fff;
     border-color: #111;
   }
+  .btn:hover{
+    background: whitesmoke;
+    transition-duration: 0.5s;
+  }
 
   .actions-two {
     display: flex;
@@ -282,4 +286,7 @@
 
 .recommended .card-top {
   padding-top: 42px;
+}
+.btn-task:hover{
+    background: whitesmoke;
 }
