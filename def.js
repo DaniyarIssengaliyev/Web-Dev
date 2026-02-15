@@ -1,4 +1,4 @@
-
+const input = require('fs').readFileSync('/dev/stdin', 'utf8').trim();
 class Shape {
     area() {
         return 0;

@@ -1,5 +1,3 @@
-'use strict';
-
 const form = document.getElementById('todo-form');
 const input = document.getElementById('todo-input');
 const list = document.getElementById('todo-list');
@@ -49,14 +47,4 @@ form.addEventListener('submit', (e) => {
   list.appendChild(createTodoItem(value));
   input.value = '';
   input.focus();
-});
-
-// Demo items (как на картинке) — можешь удалить
-['First item', 'Second item', 'Third item'].forEach((t, i) => {
-  const item = createTodoItem(t);
-  if (i === 0) {
-    item.querySelector('.item__check').checked = true;
-    item.querySelector('.item__text').classList.add('done');
-  }
-  list.appendChild(item);
 });
