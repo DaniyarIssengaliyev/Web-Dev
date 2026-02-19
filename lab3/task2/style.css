@@ -122,7 +122,9 @@ body{
   font-size: 18px;
   color: #333;
 }
-
+.hide{
+  display:none;
+}
 .item__text.done{
   text-decoration: line-through;
   color: #777;
