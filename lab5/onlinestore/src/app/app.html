@@ -1,0 +1,18 @@
+<div class="page">
+  <h1>Kaspi.kz</h1>
+
+  <category-list
+    [categories]="categories"
+    [selectedCategoryId]="selectedCategoryId"
+    (categorySelected)="onCategorySelected($event)">
+  </category-list>
+
+  <p *ngIf="selectedCategoryId === null" class="welcome">
+    Select a category to view products.
+  </p>
+
+  <product-list
+    *ngIf="selectedCategoryId !== null"
+    [products]="products">
+  </product-list>
+</div>

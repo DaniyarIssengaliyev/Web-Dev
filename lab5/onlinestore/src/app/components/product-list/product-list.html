@@ -1,0 +1,11 @@
+<p *ngIf="visibleProducts.length === 0" class="empty">
+  No products in this category.
+</p>
+
+<div *ngIf="visibleProducts.length > 0" class="grid">
+  <product-card
+    *ngFor="let p of visibleProducts"
+    [product]="p"
+    (deleteProduct)="deleteProduct($event)">
+  </product-card>
+</div>
