@@ -24,4 +24,12 @@ export class App {
     this.selectedCategoryId = categoryId;
     this.products = categoryId === null ? [] : this.productService.getProductsByCategory(categoryId);
   }
+  showTopRated(){
+    if (this.selectedCategoryId === null) return;  
+    const arr = this.productService.getProductsByCategory(this.selectedCategoryId);
+    if(arr.length === 0) return;
+    const max = Math.max(...arr.map(p => p.rating));
+    const one = arr.find(p => p.rating === max);
+    this.products = one ? [one] : [];
+  }
 }

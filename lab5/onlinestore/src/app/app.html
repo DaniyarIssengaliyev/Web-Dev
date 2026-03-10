@@ -6,13 +6,13 @@
     [selectedCategoryId]="selectedCategoryId"
     (categorySelected)="onCategorySelected($event)">
   </category-list>
-
+  <button (click)="showTopRated()" > Top item </button>
   <p *ngIf="selectedCategoryId === null" class="welcome">
     Select a category to view products.
   </p>
 
   <product-list
-    *ngIf="selectedCategoryId !== null"
+    *ngIf="products.length > 0"
     [products]="products">
   </product-list>
 </div>
